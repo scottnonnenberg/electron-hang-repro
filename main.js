@@ -28,11 +28,8 @@ function createWindow () {
     slashes: true,
   });
   mainWindow.loadURL(location);
-
-  setTimeout(function() {
-    mainWindow.webContents.openDevTools()
-    mainWindow.show();
-  }, 1000);
+  mainWindow.webContents.openDevTools()
+  mainWindow.show();
 }
 
 app.on('ready', function() {
